@@ -253,28 +253,32 @@ ul {
   color: #DA00FE;
 }
 
-@media screen and (max-width: 768px) {
-  section {
+/* @media screen and (max-width: 768px) { */
+/* section {
     display: block;
-  }
+  } */
 
-  .banner {
+/* aside {
+    display: none;
+  } */
+
+/* .banner {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     width: auto;
     padding: 1rem;
-  }
+  } */
 
-  .prod-img {
+/* .prod-img {
     width: 25rem;
     height: 20rem;
     top: 0;
     left: -5rem;
     position: relative;
-  }
+  } */
 
-  .prod-filter {
+/* .prod-filter {
     margin: auto 0rem;
-  }
-}
+  } */
+/* } */
