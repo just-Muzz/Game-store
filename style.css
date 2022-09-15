@@ -13,7 +13,6 @@
 
 section {
   background: #242424;
-  display: flex;
 }
 
 aside {
@@ -21,6 +20,7 @@ aside {
   border-radius: 0 0 1rem 0;
   min-width: 15rem;
   padding: 1rem;
+  display: none;
 }
 
 .first-sidebar-cont {
@@ -97,13 +97,11 @@ aside {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 2rem;
 }
 
 .controls {
-  right: 0;
-  top: 0;
-  position: absolute;
   display: flex;
   align-items: center;
 }
@@ -117,10 +115,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: .75rem 1.5rem;
+  /* padding: .75rem 1.5rem; */
   background: rgba(95, 95, 95, 0.35);
   border-radius: 1rem;
-  margin-left: 3.6rem;
+  /* margin-left: 3.6rem; */
 }
 
 .search {
@@ -135,11 +133,17 @@ header {
 }
 
 .banner {
-  width: 55rem;
+  /* width: 55rem;
   background: linear-gradient(180deg, rgba(161, 0, 237, 0.27) 0%, #DA00FE 100%);
   backdrop-filter: blur(37.5rem);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.5rem; */
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: auto;
+  padding: 1rem;
 }
 
 .prod-showcase p {
@@ -152,11 +156,11 @@ header {
 }
 
 .prod-img {
-  position: absolute;
+  /* position: absolute;
   width: 32rem;
   height: 21rem;
   left: 24rem;
-  top: -2.3rem;
+  top: -2.3rem; */
 }
 
 ul {
@@ -253,16 +257,38 @@ ul {
   color: #DA00FE;
 }
 
-/* @media screen and (max-width: 768px) { */
-/* section {
-    display: block;
-  } */
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+  }
 
-/* aside {
-    display: none;
-  } */
+  aside {
+    display: initial;
+  }
 
-/* .banner {
+  header {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+  }
+
+  .controls {
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    width: 55rem;
+    background: linear-gradient(180deg, rgba(161, 0, 237, 0.27) 0%, #DA00FE 100%);
+    backdrop-filter: blur(37.5rem);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* .banner {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -270,15 +296,15 @@ ul {
     padding: 1rem;
   } */
 
-/* .prod-img {
-    width: 25rem;
-    height: 20rem;
-    top: 0;
-    left: -5rem;
-    position: relative;
-  } */
+  .prod-img {
+    position: absolute;
+    width: 32rem;
+    height: 21rem;
+    left: 24rem;
+    top: -2.3rem;
+  }
 
-/* .prod-filter {
+  /* .prod-filter {
     margin: auto 0rem;
   } */
-/* } */
+}
